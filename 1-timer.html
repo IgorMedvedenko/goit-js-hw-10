@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1-timer</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-BE24Cirx.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbSUbo7J.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-C1gPI-5C.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-iDl8IU-u.css">
   </head>
 
   <body>
@@ -14,10 +17,9 @@
       <h1 class="main-title">Welcome to 1-timer</h1>
       <a class="back-link" href="./index.html">Go back</a>
 
-      <!-- /--new--/ -->
-      <div class="container">
-        <input type="text" id="datetime-picker" />
-        <button type="button" data-start>Start</button>
+      <div class="container-timer">
+        <input class="inpt" type="text" id="datetime-picker" />
+        <button class="btn" type="button" data-start disabled>Start</button>
       </div>
 
       <div class="timer">
