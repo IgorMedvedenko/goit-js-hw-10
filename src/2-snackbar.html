@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2-snackbar</title>
+    <title>Promise Generator</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -13,26 +13,40 @@
       <a class="back-link" href="./index.html">Go back</a>
     </div>
 
-    <div class="container">
+    <div class="container-generator">
       <form class="form">
-        <label>
+        <label class="form-label">
           Delay (ms)
-          <input type="number" name="delay" required />
+          <input class="form-input" type="number" name="delay" required />
         </label>
 
-        <fieldset>
-          <legend>State</legend>
-          <label>
-            <input type="radio" name="state" value="fulfilled" required />
-            Fulfilled
-          </label>
-          <label>
-            <input type="radio" name="state" value="rejected" required />
-            Rejected
-          </label>
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend">State</legend>
+          <div class="radio-set">
+            <label class="fieldset-label">
+              <input
+                class="fulfilled-input"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
+              Fulfilled
+            </label>
+            <label class="fieldset-label">
+              <input
+                class="rejected-input"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
+              Rejected
+            </label>
+          </div>
         </fieldset>
 
-        <button type="submit">Create notification</button>
+        <button class="gen-btn" type="submit">Create notification</button>
       </form>
     </div>
     <script type="module" src="./js/2-snackbar.js"></script>
