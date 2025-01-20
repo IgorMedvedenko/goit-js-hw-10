@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2-snackbar</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-iDl8IU-u.css">
+    <title>Promise Generator</title>
+    <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-C9-c-Yh4.css">
   </head>
   <body>
     <div class="container">
@@ -14,26 +17,40 @@
       <a class="back-link" href="./index.html">Go back</a>
     </div>
 
-    <div class="container">
-      <form class="form">
-        <label>
+    <div class="container-generator">
+      <form>
+        <label class="form-label">
           Delay (ms)
-          <input type="number" name="delay" required />
+          <input class="form-input" type="number" name="delay" required />
         </label>
 
-        <fieldset>
-          <legend>State</legend>
-          <label>
-            <input type="radio" name="state" value="fulfilled" required />
-            Fulfilled
-          </label>
-          <label>
-            <input type="radio" name="state" value="rejected" required />
-            Rejected
-          </label>
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend">State</legend>
+          <div class="radio-set">
+            <label class="fieldset-label">
+              <input
+                class="fulfilled-input"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
+              Fulfilled
+            </label>
+            <label class="fieldset-label">
+              <input
+                class="rejected-input"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
+              Rejected
+            </label>
+          </div>
         </fieldset>
 
-        <button type="submit">Create notification</button>
+        <button class="gen-btn" type="submit">Create notification</button>
       </form>
     </div>
   </body>
